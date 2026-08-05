@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F5F5F5;
+    color:#111;
+}
+
+.container{
+    width:min(1180px,90%);
+    margin:auto;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    min-height:100vh;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:45px 0;
+}
+
+.navbar a{
+    color:#111;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:400;
+    transition:.25s;
+}
+
+.navbar a:hover{
+    color:#79B8D7;
+}
+
+.navbar .active{
+    border-bottom:2px solid #111;
+    padding-bottom:3px;
+}
+
+/* ---------- HERO ---------- */
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  align-items: center;
+  gap: 100px;
+  margin-top: 70px;
+}
+
+.hero-left h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #111111;
+  margin-bottom: 20px;
+}
+
+
+.hero-left p{
+    max-width:560px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.hero-left span{
+    color:#7FB7D7;
+    font-weight:500;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 32px;
+  background: #8EC3E6;
+  color: white;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(142, 195, 230, 0.35);
+}
+
+.hero-right{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.hero-right img {
+  width: 340px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- ABOUT ---------- */
+
+.about {
+  padding: 120px 0;
+  background: #F5F5F5;
+}
+
+.about h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-text h3 {
+  color: #8EC3E6;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 340px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.projects {
+  padding: 120px 0;
+  background: #F5F5F5;
+}
+
+.projects h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* ---------- Grid ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 28px;
+}
+
+.km,
+.cmu,
+.atlas {
+  grid-column: span 2;
+}
+
+.matcha,
+.esnet {
+  grid-column: span 3;
+}
+
+/* ---------- Shared Card ---------- */
+
+.project-card {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.matcha,
+.esnet {
+  height: 335px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+/* ---------- Shared Text ---------- */
+
+.project-info {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  z-index: 5;
+}
+
+.project-info h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+}
+
+.project-info p {
+  font-size: 13px;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Shared Images ---------- */
+
+.project-card img {
+  position: absolute;
+}
+
+/* =====================================================
+ KM JEWELS
+===================================================== */
+
+/* =====================================================
+   KMJEWELS PROJECT PAGE
+===================================================== */
+
+.project-page {
+  background:#F5F5F5;
+  min-height:100vh;
+  padding:50px 0;
+}
+
+
+.project-container {
+  width: 100%;
+  max-width:1600px
+}
+
+
+/* Back */
+
+.back {
+  position:absolute;
+  top:40px;
+  left:40px;
+  color:#111;
+  text-decoration:none;
+  font-size:22px;
+}
+
+
+/* Header */
+
+.project-header {
+  padding:70px 55px 65px;
+}
+
+
+.project-header h1 {
+  font-family:"Playfair Display", serif;
+  font-size:42px;
+  font-weight:500;
+  margin-bottom:55px;
+}
+
+
+.project-meta {
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:100px;
+}
+
+
+.project-meta h4 {
+  font-size:25px;
+  font-weight:700;
+}
+
+.project-meta h4 {
+  margin-bottom:15px;
+}
+
+.project-meta div:nth-child(2) h4:nth-of-type(2) {
+  margin-top:25px;
+}
+
+
+.project-meta p {
+  font-size:16px;
+  line-height:1.7;
+  color:#333;
+}
+
+
+
+/* Purple Sections */
+
+.design-section {
+
+  background:#E7D8EA;
+  padding:45px 45px 60px;
+
+}
+
+
+.design-section h2 {
+
+  font-family:"Playfair Display", serif;
+  font-size:30px;
+  font-weight:500;
+  margin-bottom:35px;
+
+}
+
+
+.design-image {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 0;
+}
+
+.design-image img {
+  width:90%;
+  max-width:1200px;
+  height:auto;
+  object-fit:contain;
+}
+
+
+
+
+/* Style Guide */
+
+.style-section {
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding:50px 45px;
+  gap:100px;
+  background:white;
+
+}
+.style-section {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  padding:60px 45px;
+  gap:100px;
+  background:white;
+}
+
+
+.style-section h3 {
+  font-family:"Playfair Display", serif;
+  font-size:30px;
+  margin-bottom:25px;
+}
+
+
+.style-section p {
+  font-size:16px;
+  line-height:1.8;
+  color:#333;
+}
+
+
+.colors {
+  display:flex;
+  gap:0;
+  margin-top:20px;
+}
+
+
+.color-card {
+  text-align:center;
+}
+
+
+.color {
+  display:block;
+  width:160px;
+  height:120px;
+}
+
+
+.color-card p {
+  background:#000;
+  color:white;
+  margin:0;
+  padding:8px 0;
+  font-family:"Playfair Display", serif;
+  font-size:15px;
+}
+
+
+/* Palette */
+
+.color-gray {
+  background:#DDDDDD;
+}
+
+.color-blue {
+  background:#5C829D;
+}
+
+.color-black {
+  background:#000000;
+}
+
+
+.style-section h3 {
+
+  font-size:25px;
+  margin-bottom:15px;
+
+}
+
+
+.style-section p {
+
+  line-height:1.8;
+
+}
+
+.project-card,
+.project-card:visited,
+.project-card:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+.prototype-btn {
+
+  display:block;
+  width:270px;
+
+  margin-top:50px;
+
+  background:white;
+  color:#111;
+
+  padding:18px 40px;
+
+  border-radius:15px;
+
+  font-size:20px;
+  font-weight:500;
+
+  text-align:center;
+  text-decoration:none;
+
+  transition:.3s ease;
+
+}
+
+
+.prototype-btn:hover {
+
+  transform:translateY(-4px);
+
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+/* =====================================================
+ PROJECT CARD IMAGES
+===================================================== */
+
+.project-card img {
+  position:absolute;
+}
+
+
+/* KM JEWELS */
+
+.km {
+  background:#F4E9F8;
+}
+
+.km img {
+  width:70%;
+  left:50%;
+  top:90px;
+  transform:translateX(-50%);
+}
+
+
+/* CMU */
+
+.cmu {
+  background:#FDF0BE;
+}
+
+.cmu img {
+  width:70%;
+  left:50%;
+  top:90px;
+  transform:translateX(-50%);
+}
+
+
+/* ATLAS */
+
+.atlas {
+  background:#FFF0B8;
+}
+
+.atlas img {
+  width:60%;
+  left:50%;
+  top:90px;
+  transform:translateX(-50%);
+}
+
+
+/* MATCHA */
+
+.matcha {
+  background:#D9F5EE;
+}
+
+.matcha img {
+  width:82%;
+  left:65%;
+  top:110px;
+  transform:translateX(-50%);
+}
+
+
+/* ESNET */
+
+.esnet {
+  background:#D7EAFF;
+}
+
+.esnet img {
+  width:82%;
+  left:65%;
+  top:110px;
+  transform:translateX(-50%);
+}
+
+/* Matcha Project Sections */
+
+.matcha-section {
+  background:#D3F6F0;
+}
+
+.design-section h2 {
+  font-family:"Playfair Display", serif;
+  font-size:30px;
+  font-weight:500;
+  margin-bottom:35px;
+
+  -webkit-text-stroke: 4px white;
+  paint-order: stroke fill;
+}
+
+.color {
+  display:block;
+  width:160px;
+  height:120px;
+  border: 1px solid #111;
+}
