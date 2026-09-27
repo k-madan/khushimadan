@@ -1,45 +1,51 @@
 import aboutImg from "../images/about.jpeg";
+import ScrollReveal from "../components/ScrollReveal";
 
 function About() {
   return (
     <section className="about" id="about">
       <div className="container">
 
-        <h2>Hey, I'm Khushi</h2>
+        <ScrollReveal>
+          <h2>Hey, I'm Khushi</h2>
+        </ScrollReveal>
 
         <div className="about-layout">
 
-          <div className="about-text">
+          <ScrollReveal className="about-text-reveal">
+            <div className="about-text">
 
-            <h3>Background & Education</h3>
+              <h3>Background & Education</h3>
 
-            <p>
-              I'm a UI/UX designer and aspiring front-end developer currently
-              studying Cognitive Science and Data Science at the University of
-              California, Berkeley. I enjoy designing intuitive digital
-              experiences that combine creativity, accessibility, and thoughtful
-              user-centered design.
-            </p>
+              <p>
+                I’m a UC Berkeley student studying Cognitive Science, Data Science & Design, where I combine my interests in technology,
+                design, and human behavior. Through coursework in computer
+                science, data science, cognitive science, and design, I’m building
+                a strong foundation in software development, problem-solving, and human computer
+                interaction. I have experience programming in Python, Java, SQL, and JavaScript,
+                along with HTML and CSS, and I used React for the frontend development of this site!
+                Most of my experience is with Figma, UI/UX design,
+                user research, and building responsive and thoughtful applications.
+              </p>
 
-            <p>
-              Through coursework and personal projects, I've developed skills in
-              wireframing, prototyping, user research, interaction design, and
-              front-end development with HTML, CSS, JavaScript, and React.
-            </p>
+              <h3>Extracurriculars</h3>
 
-            <h3>Passions & Extracurriculars</h3>
+              <p>
+                Outside the classroom, I’m involved with UX @ Berkeley, Web
+                Development @ Berkeley and Blockchain @ Berkeley, where I work on UI/UX design and explore
+                frontend development. I also enjoy building personal projects
+                that combine design and technology, exploring Figma and new tools. Through these activities, I
+                continue developing my skills in collaboration, design,
+                and development.</p>
 
-            <p>
-              Outside of academics, I enjoy building portfolio projects,
-              exploring new design trends, mentoring students, and continuously
-              learning new technologies that help bring ideas to life.
-            </p>
+            </div>
+          </ScrollReveal>
 
-          </div>
-
-          <div className="about-image">
-            <img src={aboutImg} alt="Khushi" />
-          </div>
+          <ScrollReveal className="about-image-reveal">
+            <div className="about-image">
+              <img src={aboutImg} alt="Khushi" />
+            </div>
+          </ScrollReveal>
 
         </div>
 

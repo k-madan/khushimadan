@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import lowfi from "../images/projects/kmjewels/lowfi.png";
 import hifi from "../images/projects/kmjewels/hifi.png";
 
@@ -12,9 +13,9 @@ function KMJewels() {
       <div className="project-container">
 
         {/* Back Button */}
-        <a href="/#projects" className="back">
+        <Link to="/designs" className="back">
           ←
-        </a>
+        </Link>
 
 
         {/* Header */}
@@ -28,7 +29,7 @@ function KMJewels() {
             <div>
               <h4>Project Description</h4>
               <p>
-                Designed an e-commerce mobile app experience for KMJewels,
+                First ever interface I designed using Figma. Included in portfolio to show how I started and have grown in design! I designed an e-commerce mobile app experience for a hypothetical jewelry brand, KMJewels,
                 focusing on a clean, luxury-inspired shopping experience.
               </p>
             </div>

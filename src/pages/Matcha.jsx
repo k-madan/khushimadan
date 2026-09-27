@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import lowfi from "../images/projects/matcha/lowfi.png";
 import hifi from "../images/projects/matcha/hifi.png";
 
@@ -14,9 +15,9 @@ function Matcha() {
 
 
         {/* Back Button */}
-        <a href="/#projects" className="back">
+        <Link to="/designs" className="back">
           ←
-        </a>
+        </Link>
 
 
 
@@ -38,7 +39,7 @@ function Matcha() {
               </h4>
 
               <p>
-                Designed a website experience for MatchaMap,
+                Personal project designing a website experience for MatchaMap,
                 combining matcha cafe discovery, reviews,
                 and location-based recommendations into one platform.
               </p>
@@ -63,7 +64,7 @@ function Matcha() {
               </h4>
 
               <p>
-                Me - Web UX/UI
+                Me - Web UI/UX
               </p>
 
             </div>

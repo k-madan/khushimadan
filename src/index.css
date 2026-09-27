@@ -12,7 +12,7 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#F5F5F5;
+    background:#ffffff;
     color:#111;
 }
 
@@ -30,10 +30,13 @@ body{
 /* ---------- NAVBAR ---------- */
 
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:45px 0;
+  width:90%;
+  max-width:1180px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:45px 0;
 }
 
 .navbar a{
@@ -49,8 +52,9 @@ body{
 }
 
 .navbar .active{
-    border-bottom:2px solid #111;
-    padding-bottom:3px;
+  color:#111;
+  border-bottom:2px solid #111;
+  padding-bottom:5px;
 }
 
 /* ---------- HERO ---------- */
@@ -117,8 +121,8 @@ body{
 /* ---------- ABOUT ---------- */
 
 .about {
-  padding: 120px 0;
-  background: #F5F5F5;
+  padding: 60px 0;
+  background: #ffffff;
 }
 
 .about h2 {
@@ -164,8 +168,8 @@ body{
 ===================================================== */
 
 .projects {
-  padding: 120px 0;
-  background: #F5F5F5;
+  padding: 60px 0;
+  background: #ffffff;
 }
 
 .projects h2 {
@@ -178,35 +182,19 @@ body{
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-}
-
-.km,
-.cmu,
-.atlas {
-  grid-column: span 2;
-}
-
-.matcha,
-.esnet {
-  grid-column: span 3;
 }
 
 /* ---------- Shared Card ---------- */
 
 .project-card {
   position: relative;
-  height: 390px;
+  height: 300px;
   overflow: hidden;
   border-radius: 24px;
   cursor: pointer;
   transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.matcha,
-.esnet {
-  height: 335px;
 }
 
 .project-card:hover {
@@ -251,9 +239,9 @@ body{
 ===================================================== */
 
 .project-page {
-  background:#F5F5F5;
+  background:#ffffff;
   min-height:100vh;
-  padding:50px 0;
+  padding:20px 0;
 }
 
 
@@ -278,7 +266,7 @@ body{
 /* Header */
 
 .project-header {
-  padding:70px 55px 65px;
+  padding:30px 55px 65px;
 }
 
 
@@ -323,7 +311,7 @@ body{
 
 .design-section {
 
-  background:#E7D8EA;
+  background:#FFF4BF;
   padding:45px 45px 60px;
 
 }
@@ -504,9 +492,9 @@ body{
 }
 
 .km img {
-  width:70%;
+  width:48%;
   left:50%;
-  top:90px;
+  top:100px;
   transform:translateX(-50%);
 }
 
@@ -518,9 +506,9 @@ body{
 }
 
 .cmu img {
-  width:70%;
+  width:48%;
   left:50%;
-  top:90px;
+  top:100px;
   transform:translateX(-50%);
 }
 
@@ -532,9 +520,9 @@ body{
 }
 
 .atlas img {
-  width:60%;
+  width:48%;
   left:50%;
-  top:90px;
+  top:100px;
   transform:translateX(-50%);
 }
 
@@ -548,7 +536,7 @@ body{
 .matcha img {
   width:82%;
   left:65%;
-  top:110px;
+  top:141px;
   transform:translateX(-50%);
 }
 
@@ -562,8 +550,24 @@ body{
 .esnet img {
   width:82%;
   left:65%;
-  top:110px;
+  top:141px;
   transform:translateX(-50%);
+}
+
+/* VERA */
+
+.vera {
+  background:#DDEEFA;
+}
+
+.vera img {
+  width:102%;
+  left:50%;
+  top:75px;
+  /* landing.png has extra transparent padding on the right (content bbox
+     is centered ~5.35% left of the image canvas), so shift the rendered
+     image right to visually center the phone itself, not the image box */
+  transform:translateX(calc(-50% + 20.5px));
 }
 
 /* Matcha Project Sections */
@@ -587,4 +591,976 @@ body{
   width:160px;
   height:120px;
   border: 1px solid #111;
+}
+
+/* =====================================================
+   ATLAS AGENT PROJECT PAGE
+===================================================== */
+
+.atlas-section {
+  background: #E7D8EA;
+}
+
+.atlas-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.atlas-presentation .prototype-btn {
+  margin-top: 0;
+}
+
+
+/* Atlas color palette */
+
+.atlas-white {
+  background: #FFFFFF;
+}
+
+.atlas-purple {
+  background: #39376C;
+}
+
+.atlas-black {
+  background: #000000;
+}
+
+
+/* Atlas high fidelity image */
+
+.atlas-page .design-image img {
+  width: 90%;
+  max-width: 1400px;
+}
+
+/* Atlas Midpoint Presentation */
+
+.midpoint-link {
+  display: block;
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.midpoint-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.midpoint-link:hover .midpoint-image {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================================================
+   ESNET PROJECT PAGE
+===================================================== */
+
+.esnet-section {
+  background: #DAF1FF;
+}
+
+
+/* Final Presentation */
+
+.presentation-link {
+  display: block;
+  width: 65%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.presentation-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation-link:hover .presentation-image {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Developed Site */
+
+.developed-site {
+  background: white;
+  padding: 45px 45px 60px;
+}
+
+.developed-site h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.site-image-link {
+  display: block;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-image-link:hover .site-image {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.website-btn {
+  width: 160px;
+  margin-top: 35px;
+  background: #DAF1FF;
+  font-size: 14px;
+  padding: 12px 25px;
+}
+
+/* =====================================================
+   CMU PROJECT PAGE
+===================================================== */
+
+.cmu-section {
+  background: #FFEBF2;
+}
+
+.cmu-lofi-image {
+  padding: 10px 0 20px;
+}
+
+.cmu-lofi-image img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cmu-hifi-image {
+  padding: 10px 0 30px;
+}
+
+.cmu-hifi-image img {
+  width: 70%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* =========================================
+   GRAPHIC DESIGNS PAGE
+========================================= */
+
+.graphics-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.graphics-container {
+  width: 1100px;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+.graphics-container > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 65px 0;
+}
+
+
+/* =========================================
+   GRAPHIC PROJECTS
+========================================= */
+
+.graphics-container .graphic-project {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+  column-gap: 85px;
+  align-items: center;
+  margin-bottom: 110px;
+}
+
+
+/* =========================================
+   IMAGE BOXES
+========================================= */
+
+.graphics-container .graphic-image-column {
+  width: 580px;
+  border-radius: 32px;
+  padding: 48px 55px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.graphics-container .graphic-one {
+  background: #d5f4f0;
+}
+
+.graphics-container .graphic-three {
+  background: #e9dded;
+}
+
+
+/* Image */
+
+.graphics-container .graphic-image-column img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+}
+
+
+/* Image link */
+
+.graphics-container .graphic-image-column > a:first-child {
+  display: block;
+  width: 100%;
+}
+
+
+/* =========================================
+   MIDDLE CARD
+   TEXT LEFT / IMAGE RIGHT
+========================================= */
+
+.graphics-container .graphic-card-reverse {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  column-gap: 60px;
+  align-items: center;
+
+  background: #dcefff;
+  border-radius: 32px;
+
+  padding: 55px;
+  box-sizing: border-box;
+
+  margin-bottom: 110px;
+}
+
+
+/* Middle card text */
+
+.graphics-container .graphic-card-reverse .graphic-info {
+  width: 100%;
+}
+
+
+/* Middle card image */
+
+.graphics-container .graphic-image-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphics-container .graphic-image-container > a:first-child {
+  display: block;
+  width: 100%;
+}
+
+.graphics-container .graphic-image-container img {
+  display: block;
+
+  width: 100%;
+  max-width: none;
+
+  height: auto;
+
+  border-radius: 24px;
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.graphics-container .graphic-info {
+  width: 100%;
+  align-self: center;
+}
+
+
+/* Main project title */
+
+.graphics-container .graphic-info h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  margin: 0 0 14px 0;
+}
+
+
+/* Description */
+
+.graphics-container .graphic-info p {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  margin: 0 0 38px 0;
+}
+
+
+/* Metadata headers */
+
+.graphics-container .graphic-info h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  margin: 0 0 7px 0;
+}
+
+
+/* Metadata descriptions */
+
+.graphics-container .graphic-info h3 + p {
+  font-family: "Poppins", sans-serif;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.graphics-container .graphic-button {
+  display: inline-block;
+
+  margin-top: 16px;
+
+  padding: 11px 25px;
+
+  background: white;
+  color: black;
+
+  border-radius: 10px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: transform 0.2s ease;
+}
+
+.graphics-container .graphic-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .graphics-container {
+    max-width: calc(100% - 50px);
+  }
+
+  .graphics-container .graphic-project,
+  .graphics-container .graphic-card-reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .graphics-container .graphic-image-column {
+    width: 100%;
+    max-width: 580px;
+  }
+
+  .graphics-container .graphic-card-reverse {
+    width: 100%;
+  }
+
+  .graphics-container .graphic-info {
+    max-width: 580px;
+  }
+
+  .graphics-container .graphic-image-container {
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .graphics-page {
+    padding-top: 25px;
+  }
+
+  .graphics-container {
+    max-width: calc(100% - 30px);
+  }
+
+  .graphics-container > h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .graphics-container .graphic-image-column,
+  .graphics-container .graphic-card-reverse {
+    padding: 25px;
+    border-radius: 24px;
+  }
+
+  .graphics-container .graphic-image-column img,
+  .graphics-container .graphic-image-container img {
+    border-radius: 18px;
+  }
+
+  .graphics-container .graphic-info h2 {
+    font-size: 25px;
+  }
+
+  .graphics-container .graphic-info p {
+    font-size: 15px;
+  }
+}
+
+/* =========================================
+   RESUME PAGE
+========================================= */
+
+.resume-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 55px 0 120px;
+}
+
+.resume-container {
+  width: 1100px;
+  max-width: calc(100% - 80px);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 55px;
+}
+
+.resume-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.resume-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #8EC3E6;
+  color: white;
+
+  padding: 13px 23px;
+  border-radius: 12px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: all .25s ease;
+}
+
+.resume-download::after {
+  content: "↗";
+  font-size: 17px;
+}
+
+.resume-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(142, 195, 230, .3);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.resume-contact {
+  padding: 28px 30px;
+  margin-bottom: 10px;
+
+  background: white;
+  border-radius: 18px;
+
+  border-left: 5px solid #8EC3E6;
+
+  box-shadow: 0 8px 30px rgba(0,0,0,.04);
+}
+
+.resume-contact h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.resume-contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.resume-section {
+  padding: 55px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.resume-section > h2 {
+  position: relative;
+
+  font-family: "Playfair Display", serif;
+  font-size: 31px;
+  font-weight: 700;
+
+  margin-bottom: 38px;
+  padding-left: 18px;
+}
+
+.resume-section > h2::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 4px;
+
+  width: 5px;
+  height: 28px;
+
+  background: #8EC3E6;
+  border-radius: 4px;
+}
+
+
+/* =========================================
+   ENTRIES
+========================================= */
+
+.resume-entry {
+  position: relative;
+
+  margin-bottom: 38px;
+  padding: 22px 25px;
+
+  border-radius: 16px;
+
+  transition: all .25s ease;
+}
+
+.resume-entry:hover {
+  background: white;
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.resume-entry:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.resume-entry-header h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resume-entry-header span {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.resume-role {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #79B8D7;
+  margin-top: 5px;
+}
+
+.resume-location {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.resume-entry > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-top: 8px;
+  color: #444;
+}
+
+.resume-entry ul {
+  margin-top: 13px;
+  padding-left: 22px;
+}
+
+.resume-entry li {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.resume-entry li::marker {
+  color: #8EC3E6;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list span {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  padding: 9px 17px;
+
+  background: white;
+  color: #333;
+
+  border-radius: 30px;
+
+  border: 1px solid #ddd;
+
+  transition: all .2s ease;
+}
+
+.skills-list span:hover {
+  background: #8EC3E6;
+  color: white;
+  border-color: #8EC3E6;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .resume-page {
+    padding: 35px 0 80px;
+  }
+
+  .resume-container {
+    max-width: calc(100% - 35px);
+  }
+
+  .resume-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .resume-header h1 {
+    font-size: 45px;
+    letter-spacing: -1px;
+  }
+
+  .resume-download {
+    font-size: 13px;
+  }
+
+  .resume-contact {
+    padding: 22px;
+  }
+
+  .resume-contact h2 {
+    font-size: 26px;
+  }
+
+  .resume-contact p {
+    line-height: 1.7;
+  }
+
+  .resume-section {
+    padding: 40px 0;
+  }
+
+  .resume-section > h2 {
+    font-size: 27px;
+  }
+
+  .resume-entry {
+    padding: 18px;
+  }
+
+  .resume-entry-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .resume-entry-header h3 {
+    font-size: 19px;
+  }
+
+  .resume-entry-header span {
+    white-space: normal;
+  }
+
+  .resume-entry li {
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  background: #111;
+  color: white;
+  margin-top: 100px;
+  padding: 80px 0 30px;
+}
+
+.footer-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+}
+
+/* Main footer text */
+
+.footer-main {
+  max-width: 700px;
+}
+
+.footer-main h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.footer-main p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  max-width: 550px;
+}
+
+/* Links */
+
+.footer-links {
+  display: flex;
+  gap: 35px;
+  margin-top: 55px;
+}
+
+.footer-links a {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: opacity 0.25s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.55;
+}
+
+/* Bottom */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 80px;
+  padding-top: 20px;
+
+  border-top: 1px solid #444;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding: 60px 0 25px;
+    margin-top: 70px;
+  }
+
+  .footer-main h2 {
+    font-size: 36px;
+  }
+
+  .footer-main p {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 50px;
+  }
+}
+
+/* =====================================================
+   SCROLL ANIMATIONS
+===================================================== */
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* NEWRIUM */
+
+.newrium {
+  background: #FFE9D8;
+}
+
+.newrium img {
+  width: 82%;
+  left: 65%;
+  top: 141px;
+  transform: translateX(-50%);
+}
+
+/* =====================================================
+   VERA PROJECT PAGE
+===================================================== */
+
+.vera-section {
+  background: #DCEAF7;
+}
+
+.vera-white-section {
+  background: #FFFFFF;
+}
+
+.vera-prototype-image img {
+  width: 560px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* prototype.png has extra transparent padding on the right (content
+     bbox is centered ~5.33% left of the image canvas), so shift the
+     rendered image right to visually center the phone itself */
+  transform: translateX(5.33%);
+}
+
+.typing-cursor {
+  color: #8EC3E6;
+  font-weight: 400;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
 }
